@@ -1,26 +1,29 @@
 Spring
 =======
 
-**Spring** - это модификация [Far Manager](http://www.farmanager.com/) 3.0,
-в которой вместо встроенного макроязыка используется скриптовый язык Lua 5.1.
+**Spring** is a modification of [Far Manager](http://www.farmanager.com/) 3.0,
+that uses the Lua 5.1 programming language instead of the embedded macro-language.
 
-Под макросом понимается Lua-скрипт и его мета-данные, такие как:
+A macro is a Lua-script and its meta-data such as:
 
-* Область начала исполнения скрипта.
-* Клавиша, инициирующая исполнение скрипта из данной области.
-* Предварительные условия для исполнения скрипта.
-* Флаги времени исполнения: `DisableOutput` и `NoSendKeysToPlugins`.
+* Areas from which the script may be executed
+* Keys that initiate execution of the script from those areas
+* Prerequisites for the execution of the script
+* Run-time flags: `EnableOutput` and `NoSendKeysToPlugins`
 
-Функциональность
------------------
+Functionality
+--------------
 
-* Импорт и экспорт макросов.
-* Запись и воспроизведение макросов.
-* Библиотеки функций Lua.
-* Библиотеки функций LuaFAR (API плагинов).
-* Библиотеки функций макроязыка (API макросов).
-* API `MacroControl` для плагинов: все операции, кроме `MCTL_GETLASTERROR`.
+* Macro recording and playback
+* Standard Lua libraries
+* LuaFAR libraries ("plugin API")
+* [Libraries of macro functions][2] ("macro API")
+* For plugins: function `MacroControl`
 
-Статус проекта
+
+Project status
 ---------------
-30 сентября 2012 г. данный проект объединился с Far Manager, и его отдельная разработка была прекращена.
+Since 30 September 2012 this project is merged with Far Manager, and its separate development stopped.
+
+[1]: http://www.lua.org/
+[2]: 42.html
